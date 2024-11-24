@@ -9,6 +9,17 @@
     body{
         justify-content: center !important;
     }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        height: 3.75rem !important;
+        width: auto;
+        margin-bottom: 1.875rem !important;
+    }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px){
     html{
