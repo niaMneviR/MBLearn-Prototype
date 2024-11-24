@@ -25,6 +25,17 @@
         padding: 1.25rem;
 
     }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        height: 3.75rem !important;
+        width: auto;
+        margin-bottom: 1.875rem !important;
+    }
 
     .text_area1 p{
         font-size: 1.25rem !important;

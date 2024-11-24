@@ -12,7 +12,7 @@
     <main>
         <section>
             <article class="logo">
-                <img src="./style/assests/Full_Logo.svg" alt="">
+                <img src="./style/assests/Full_Logo.svg" alt="" id="logo">
             </article>
             <article class="text_area1">
                 <p>Prepare For Success,</p>
@@ -47,4 +47,20 @@
         </section>
     </main>
 </body>
+
+<script>
+    function updatelogo(){
+        const logo = document.getElementById("logo");
+        const width = window.innerWidth;
+
+        if(width <= 480){
+            logo.src = "./style/assests/Small_Logo.svg"
+        }else{
+            logo.src = "./style/assests/Full_Logo.svg"
+        }
+    }
+
+    window.addEventListener("load", updatelogo)
+    window.addEventListener("resize", updatelogo)
+</script>
 </html>
