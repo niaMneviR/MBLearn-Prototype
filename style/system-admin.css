@@ -1,0 +1,15 @@
+@import url(./globals.css);
+
+html, body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DashboardBackground-Color);
+}
+
+h1{
+    
+    font-family: var(--headerFont);
+    color: var(--Primary-Color);
+}

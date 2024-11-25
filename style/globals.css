@@ -17,6 +17,7 @@
     /*Colors*/
     --Primary-Color: hsl(218,97%,26%);
     --Unactive-Color: hsl(0,0%,40%);
+    --DashboardBackground-Color: hsl(0,0%,90%);
 
     /* Font */
     --textFont: 'Gilroy-Regular', sans-serif;
