@@ -11,21 +11,64 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li> <img src="./style/assests/Small_Logo.svg" alt=""></li>
-                <li> <i class="fa-solid fa-house"></i> </li>
-                <li> <i class="fa-solid fa-book"></i> </li>
-                <li> <i class="fa-solid fa-user-group"></i> </li>
-                <li> <i class="fa-solid fa-user-lock"></i> </li>
-                <li> <i class="fa-solid fa-gears"></i> </li>
-                <li> <i class="fa-solid fa-chart-pie"></i> </li>
-                <li> <i class="fa-solid fa-chart-gantt"></i> </li>
+            <ul class="navigations">
+                <li> <img src="./style/assests/Small_Logo.svg" alt="" class="logo"></li>
+                <li> 
+                    <i class="fa-solid fa-house icon" id="icon" data-target="label1"></i> 
+                    <span class="label"  id="label1">Home</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-book icon"  id="icon" data-target="label2"></i> 
+                    <span class="label"  id="label2">Course List Maintenance</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-user-group icon" id="icon" data-target="label3"></i> 
+                    <span class="label"  id="label3">User Manangement</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-user-lock icon"  id="icon" data-target="label4"></i> 
+                    <span class="label"  id="label4">User Account Maintenance</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-gears icon"  id="icon" data-target="label5"></i> 
+                    <span class="label"  id="label5">System Configuration Maintenance</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-chart-pie icon"  id="icon" data-target="label6"></i> 
+                    <span class="label"  id="label6">System Graph and Reports</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-chart-gantt icon"  id="icon" data-target="label7"></i> 
+                    <span class="label"  id="label7">System Activity Logs</span>    
+                </li>
             </ul>
-            <ul>
+            <ul class="users">
                 <li> <i class="fa-solid fa-bell"></i> </li>
-                <li> <span></span></li>
+                <li> <i class="fa-solid fa-user"></i> </li>
             </ul>
         </nav>
     </header>
+    <main>
+        <h1>Hello World</h1>
+    </main>
 </body>
+
+<script>
+    const icon = document.querySelectorAll('.icon');
+
+    icon.forEach(icon => {
+        const TargetID = icon.getAttribute('data-target');
+        const TargetElement = document.getElementById(TargetID);
+
+        icon.addEventListener('mouseenter', () => {
+        TargetElement.style.display = 'block'
+        });
+    
+        icon.addEventListener('mouseleave', () => {
+        TargetElement.style.display = 'none';
+        })
+    })
+
+
+</script>
 </html>
