@@ -110,14 +110,25 @@ main .Center{
 }
 
 .announcement .content{
-    border: 1px red solid;
     height: 84%;
     border-radius: 10px;
 }
 
-.item{
-    background-color: aqua;
+.carousel-inner{
     height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 main .Side{
