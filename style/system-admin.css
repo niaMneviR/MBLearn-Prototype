@@ -81,19 +81,46 @@ article{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    /* border: 1px darkblue dashed; */
+    border: 1px darkblue dashed;
 }
-main .center{
+main .Center{
     height: auto;
     width: 75%;
 }
-.center .announcement, .calendar{
+
+.Center .announcement, .calendar{
     background-color: white;
     width: 100%;
-    height: 250px;
-    border-radius: 20px;
+    height: 15.625rem;
+    border-radius: 0.625rem;
 }
-main .side{
+
+.announcement{
+    padding: 0.625rem;
+    height: auto;
+    box-sizing: border-box
+}
+
+.announcement p{
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: var(--headerFont);
+    font-size: medium;
+    color: var(--Primary-Color);
+}
+
+.announcement .content{
+    border: 1px red solid;
+    height: 84%;
+    border-radius: 10px;
+}
+
+.item{
+    background-color: aqua;
+    height: 100%;
+}
+
+main .Side{
     height: auto;
     width: 23%;
 }
