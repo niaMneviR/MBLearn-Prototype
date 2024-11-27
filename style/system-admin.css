@@ -64,6 +64,7 @@ li .label{
     border-radius: 0.313rem;
     position: fixed;
     left: 4.375rem;
+    z-index: 1;
 }
 
 .logo{
