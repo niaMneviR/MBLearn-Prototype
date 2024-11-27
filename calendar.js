@@ -34,7 +34,7 @@ const manipulate = () => {
         lit += `<li class="inactive">${i - dayEnd + 1}</li>`;
     }
 
-    currDate.innerText = `${month[month]} ${year}`;
+    currDate.innerText = `${months[month]} ${year}`;
 
     day.innerHTML = lit;
 }
