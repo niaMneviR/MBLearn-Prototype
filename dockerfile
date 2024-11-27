@@ -1,22 +1,26 @@
-# Use the official PHP-Apache image as the base
+# Use the official PHP-Apache image
 FROM php:8.2-apache
 
-# Copy your application code into the container
+# Set the working directory to /var/www/html (Apache's default)
+WORKDIR /var/www/html
+
+# Copy the project files into the container
 COPY . /var/www/html/
 
-# Set the working directory
-WORKDIR /var/www/html/
-
-# Install necessary PHP extensions (optional)
-# Example: pdo_mysql for MySQL
+# Install necessary PHP extensions (e.g., pdo_mysql for database interaction, if needed)
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Set permissions (optional but recommended)
+# Set permissions for the project files
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# Expose port 80 for the web server
+# Enable Apache rewrite module (useful for modern PHP apps like Laravel)
+RUN a2enmod rewrite
+
+# Expose port 80 for HTTP traffic
 EXPOSE 80
 
-# Start the Apache server
+RUN echo "DirectoryIndex index.html index.php" > /etc/apache2/conf-enabled/directory-index.conf
+
+# Start Apache
 CMD ["apache2-foreground"]
