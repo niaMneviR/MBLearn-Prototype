@@ -1,26 +1,19 @@
-# Use the official PHP-Apache image
-FROM php:8.2-apache
+# Use the official PHP image
+FROM php:8.0-apache
 
-# Set the working directory to /var/www/html (Apache's default)
+# Install system dependencies required for PostgreSQL
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql
+
+# Set the working directory
 WORKDIR /var/www/html
 
-# Copy the project files into the container
-COPY . /var/www/html/
+# Copy your application files from your local project directory to the working directory in the container
+COPY . .
 
-# Install necessary PHP extensions (e.g., pdo_mysql for database interaction, if needed)
-RUN docker-php-ext-install pdo pdo_mysql
+# Install required PHP extensions
+RUN docker-php-ext-install pdo pdo_pgsql
 
-# Set permissions for the project files
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
-
-# Enable Apache rewrite module (useful for modern PHP apps like Laravel)
-RUN a2enmod rewrite
-
-# Expose port 80 for HTTP traffic
+# Expose the port
 EXPOSE 80
-
-RUN echo "DirectoryIndex index.html index.php" > /etc/apache2/conf-enabled/directory-index.conf
-
-# Start Apache
-CMD ["apache2-foreground"]
