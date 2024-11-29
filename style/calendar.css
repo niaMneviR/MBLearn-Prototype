@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--textFont);
 }
 
 .calendar-container {
@@ -15,11 +15,15 @@
     align-items: center;
     padding: 25px 30px 10px;
     justify-content: space-between;
+    border: #6332c5 1px solid;
 }
 
-header .calendar-navigation {
+
+.calde{}
     display: flex;
+    justify-content: center;
 }
+
 
 header .calendar-navigation span {
     height: 38px;
@@ -45,6 +49,8 @@ header .calendar-navigation span:hover {
 header .calendar-current-date {
     font-weight: 500;
     font-size: 1rem;
+    margin: 0px ;
+    border: #6332c5 1px solid;
 }
 
 .calendar-body {
