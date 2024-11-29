@@ -33,7 +33,7 @@
 .line{
     width: 100%;
     height: 3px;
-    margin: 0px 10px; 
+    margin: 10px; 
     border-radius: 3%;
     background-color: var(--Primary-Color);
 }
@@ -91,6 +91,7 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
     cursor: default;
     font-weight: 500;
+    font-family: var(--headerFont);
     padding: 0px;
 }
 
