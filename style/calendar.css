@@ -1,3 +1,4 @@
+@import url(./globals.css);
 * {
     margin: 0;
     padding: 0;
@@ -12,20 +13,33 @@
 
 .calendar-container header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 25px 30px 10px;
-    justify-content: space-between;
-    border: #6332c5 1px solid;
-}
-
-
-.calde{}
-    display: flex;
+    padding: 10px 10px 0px 10px;
     justify-content: center;
+
+}
+
+.calendar-navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.calendar-navigation i{
+    color: var(--Unactive-Color);
+}
+.line{
+    width: 100%;
+    height: 3px;
+    margin: 0px 10px; 
+    border-radius: 3%;
+    background-color: var(--Primary-Color);
 }
 
 
-header .calendar-navigation span {
+header .calendar-navigation i{
     height: 38px;
     width: 38px;
     margin: 0 1px;
@@ -34,28 +48,23 @@ header .calendar-navigation span {
     line-height: 38px;
     border-radius: 50%;
     user-select: none;
-    color: #aeabab;
-    font-size: 1.9rem;
 }
 
 .calendar-navigation span:last-child {
     margin-right: -10px;
 }
 
-header .calendar-navigation span:hover {
+header .calendar-navigation i:hover {
     background: #f2f2f2;
+    color: var(--Primary-Color);
 }
 
 header .calendar-current-date {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: large;
+    font-family: var(--headerFont);
+    color: var(--Primary-Color);
     margin: 0px ;
-    border: #6332c5 1px solid;
-}
-
-.calendar-body {
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .calendar-body ul {
@@ -63,6 +72,10 @@ header .calendar-current-date {
     flex-wrap: wrap;
     display: flex;
     text-align: center;
+}
+
+.calendar-weekdays{
+    padding: 0px 10px;
 }
 
 .calendar-body .calendar-dates {
@@ -78,12 +91,14 @@ header .calendar-current-date {
 .calendar-body .calendar-weekdays li {
     cursor: default;
     font-weight: 500;
+    padding: 0px;
 }
 
 .calendar-body .calendar-dates li {
     position: relative;
     z-index: 1;
     cursor: pointer;
+    padding: 5px;
 }
 
 .calendar-dates li.inactive {
@@ -107,7 +122,7 @@ header .calendar-current-date {
 }
 
 .calendar-dates li.active::before {
-    background: #6332c5;
+    background: var(--Primary-Color);
 }
 
 .calendar-dates li:not(.active):hover::before {
