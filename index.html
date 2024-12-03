@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/fe68db5ba2.js" crossorigin="anonymous"></script>
     <title>MBLearn Login</title>
 </head>
-<body>
+<body id="body">
     <main>
         <section>
             <article class="logo">
@@ -59,6 +59,24 @@
             logo.src = "./style/assests/Full_Logo.svg"
         }
     }
+
+    const images = [
+        './style/assests/Login_Background.png',
+        './style/assests/Login_Background1.png',
+        './style/assests/Login_Background2.png'
+    ]
+
+    let currentIndex = 0;
+
+    function changeBackground(){
+        const background = document.getElementById('body');
+        background.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex+1)%images.length;
+    }
+
+    changeBackground();
+
+    setInterval(changeBackground,25000)
 
     window.addEventListener("load", updatelogo)
     window.addEventListener("resize", updatelogo)
