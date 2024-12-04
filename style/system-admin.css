@@ -293,10 +293,19 @@ main .Center{
 }
 
 .Center_Content{
-    border-radius: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Center_Content .panel{
     background-color: white;
-    padding: 0.625rem;
-    height: 55%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Center_Content .panel img{
+    width: 102%;
 }
 
 .status{
@@ -312,3 +321,9 @@ main .Side{
     width: 23%;
 }
 
+.status{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
