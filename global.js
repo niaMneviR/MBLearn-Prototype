@@ -13,6 +13,32 @@ icon.forEach(icon => {
     })
 })
 
+const img = document.getElementById("pfp");
+const menu = document.getElementById("list");
+
+img.addEventListener("mouseenter", () =>{
+    menu.classList.add("active")
+});
+menu.addEventListener("mouseenter", () => {
+    menu.classList.add('active')
+})
+
+img.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!menu.matches(":hover")) {
+            menu.classList.remove("active");
+        }
+    }, 100); // Small delay to ensure smoothness
+});
+
+menu.addEventListener("mouseleave", () => {
+    menu.classList.remove("active");
+});
+
+
+
+
+
    //
     const header = document.getElementById('Navigation_container');
     const nav = document.getElementById('nav')
