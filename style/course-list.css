@@ -87,8 +87,8 @@
     padding: 10px 60px;
     border-radius: 10px;
     border: 1px var(--Primary-Color) solid;
-    color: var(--Primary-Color)
-
+    color: var(--Primary-Color);
+    background-color: transparent;
 }
 
 .action > :first-child{

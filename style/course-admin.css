@@ -1,0 +1,129 @@
+.Center_Content{
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    height: 60%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.courses{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button{
+    display: inherit;
+    align-items: center;
+    gap: 10px;
+    
+}
+.button button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--Primary-Color);
+    border: solid var(--Primary-Color) 1px;
+    transition:  0.5s ease-in-out;
+}
+
+.button button:hover{
+    background-color: var(--Primary-Color);
+    color: white;
+}
+
+.header h1{
+    font-size: large;
+    margin-bottom: 0px;
+}
+.header p{
+    margin-bottom: 5px;
+}
+
+.card{
+    width: 25%;
+    height: 100%;
+}
+
+.card article{
+    background-color: var(--Primary-Color);
+    border-radius: 20px;
+    height: 100%;
+    align-items: flex-end;
+}
+
+article .section{
+    background-color: hsl(214, 98%, 20%);
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.category_type_name_mode{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.category_type_name_mode .banner{
+    width: fit-content;
+    display: flex;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: 1px white solid;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+.category_type_name_mode div p{
+    margin: 0px;
+    font-size: xx-small;
+}
+.course-name h1{ 
+    font-family: var(--headerFont);
+    color: white;
+    font-size: small;
+}
+.course-name p{
+    color: white;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.stats div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats h1{
+    margin: 0px;
+    color: white;
+    font-size: x-large;
+}
+
+.stats p{
+    margin: 0px;
+    color: white;
+}
+.stats span{
+    width: 1px;
+    background-color: white;
+    height: 50px;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/system-admin.css">
+    <link rel="stylesheet" href="./style/calendar.css">
+    <link rel="stylesheet" href="./style/course-admin.css">
+    <script src="https://kit.fontawesome.com/fe68db5ba2.js" crossorigin="anonymous"></script>
+
+    <title>System Admin</title>
+</head>
+<body>
+    <header id="Navigation_container">
+        <nav id="nav">
+            <ul class="Navigations" id="parent-nav">
+                <li id="logo"> <img src="./style/assests/Small_Logo.svg" alt="" class="logo"></li>
+                <li id="home"> 
+                    <a href="">
+                        <i class="fa-solid fa-house icon" id="icon" data-target="label1"></i> 
+                        <span class="label"  id="label1">Home</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="">
+                        <i class="fa-solid fa-book-bookmark icon"  id="icon" data-target="label2"></i> 
+                        <span class="label"  id="label2">Assigned Course</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="">
+                        <i class="fa-solid fa-person-circle-plus icon" id="icon" data-target="label3"></i> 
+                        <span class="label"  id="label3">Enroll Learner</span>
+                    </a>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-chart-pie icon"  id="icon" data-target="label6"></i> 
+                    <span class="label"  id="label6">Course Reports and Analytics</span>
+                </li>
+            </ul>
+            <ul class="users" id="ul-to-move">
+                <li> 
+                    <i class="fa-solid fa-gear icon" id="icon" data-target="label8" ></i>
+                    <span class="label"  id="label8">Account Settings</span> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-bell icon" id="icon" data-target="label9" ></i> 
+                    <span class="label"  id="label9">Notification</span> 
+                </li>
+                <li> 
+                    <img src="./style/assests/Profile-CA.png" class="icon" id="pfp"> 
+                    <div class="label account_setting" id="list">
+                        <ul class="account_setting_options">
+                            <!-- TODO: Put functionality here -->
+                            <li class="option">
+                                Login as Learner
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </li>
+                            <li class="option">
+                                Logout
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </li>
+                            <li><div class="divider"></div></li>
+                            <li class="option">
+                                View Profile
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Good Day, Course Admin</h1>
+        <article>
+            <section  class="Center">
+                <div class="announcement">
+                    <p>Announcement</p>
+                    <div id="carouselExample" class="carousel slide content" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./style/assests/slides/1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./style/assests/slides/2.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./style/assests/slides/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Center_Content">
+                    <section class="header">
+                        <div class="title">
+                            <h1>Courses</h1>
+                            <p>Manage your courses with ease—organize and oversee training programs tailored for learners</p>
+                        </div>
+                        <div class="button">
+                            <button>Active</button>
+                            <button>Archived</button>
+                        </div>
+                    </section>
+                    <section class="courses">
+                        <div class="card">
+                            <article>
+                                <section class="section">
+                                    <div class="category_type_name_mode">
+                                        <div class="banner">
+                                            <i class="fa-solid fa-person-through-window"></i>
+                                            <p>Personal Development</p>
+                                        </div>
+                                        <div class="banner">
+                                            <i class="fa-solid fa-people-group"></i>
+                                            <p>Soft Skill training</p>
+                                        </div>
+                                        <div class="course-name">
+                                            <h1>
+                                                Effective Communication Skills in the Workplace
+                                            </h1>
+                                            <p>
+                                                Online Class (Asychronous)
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <div>
+                                                <h1>35</h1>
+                                                <p>On-going</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>50</h1>
+                                                <p>Enrolled</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>15</h1>
+                                                <p>Completed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </article>
+                            
+
+                        </div>
+                        <div class="card">
+                            <article>
+                                <section class="section">
+                                    <div class="category_type_name_mode">
+                                        <div class="banner">
+                                            <i class="fa-solid fa-person-through-window"></i>
+                                            <p>Personal Development</p>
+                                        </div>
+                                        <div class="banner">
+                                            <i class="fa-solid fa-people-group"></i>
+                                            <p>Soft Skill training</p>
+                                        </div>
+                                        <div class="course-name">
+                                            <h1>
+                                                Effective Communication Skills in the Workplace
+                                            </h1>
+                                            <p>
+                                                Online Class (Asychronous)
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <div>
+                                                <h1>35</h1>
+                                                <p>On-going</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>50</h1>
+                                                <p>Enrolled</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>15</h1>
+                                                <p>Completed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </article>
+                            
+
+                        </div>
+                        <div class="card">
+                            <article>
+                                <section class="section">
+                                    <div class="category_type_name_mode">
+                                        <div class="banner">
+                                            <i class="fa-solid fa-person-through-window"></i>
+                                            <p>Personal Development</p>
+                                        </div>
+                                        <div class="banner">
+                                            <i class="fa-solid fa-people-group"></i>
+                                            <p>Soft Skill training</p>
+                                        </div>
+                                        <div class="course-name">
+                                            <h1>
+                                                Effective Communication Skills in the Workplace
+                                            </h1>
+                                            <p>
+                                                Online Class (Asychronous)
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <div>
+                                                <h1>35</h1>
+                                                <p>On-going</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>50</h1>
+                                                <p>Enrolled</p>
+                                            </div>
+                                            <span></span>
+                                            <div>
+                                                <h1>15</h1>
+                                                <p>Completed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </section>
+                            </article>
+                            
+
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="Side">
+                <div class="calendar-container">
+                    <header class="calendar-header">
+                        <div class="calendar-navigation">
+                            <i id="calendar-prev" class="fa-solid fa-chevron-left"></i>
+                            <p class="calendar-current-date"></p>
+                            <i id="calendar-next" class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <span class="line"></span>
+                    </header>
+            
+                    <div class="calendar-body">
+                        <ul class="calendar-weekdays">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="calendar-dates"></ul>
+                    </div>
+                </div>
+
+                <div class="task_todo">
+
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+<script src="./global.js"></script>
+<script src="calendar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
