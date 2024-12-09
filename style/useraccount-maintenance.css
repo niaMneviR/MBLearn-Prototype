@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Coming_Soon{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Coming_Soon img{
+    width: 15rem;
+}

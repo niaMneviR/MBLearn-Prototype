@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/system-admin.css">
+    <link rel="stylesheet" href="./style/useraccount-maintenance.css">
+    <link rel="stylesheet" href="./style/calendar.css">
+    <script src="https://kit.fontawesome.com/fe68db5ba2.js" crossorigin="anonymous"></script>
+
+    <title>System Admin</title>
+</head>
+<body>
+    <header id="Navigation_container">
+        <nav id="nav">
+            <ul class="Navigations" id="parent-nav">
+                <li id="logo"> <img src="./style/assests/Small_Logo.svg" alt="" class="logo"></li>
+                <li id="home"> 
+                    <a href="system-admin.html">
+                        <i class="fa-solid fa-house icon" id="icon" data-target="label1"></i> 
+                        <span class="label"  id="label1">Home</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="course-list.html">
+                        <i class="fa-solid fa-book icon"  id="icon" data-target="label2"></i> 
+                        <span class="label"  id="label2">Course List Maintenance</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="user-list.html">
+                        <i class="fa-solid fa-user-group icon" id="icon" data-target="label3"></i> 
+                        <span class="label"  id="label3">User Management</span>
+                    </a>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-user-lock icon"  id="icon" data-target="label4"></i> 
+                    <span class="label"  id="label4">User Account Maintenance</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-gears icon"  id="icon" data-target="label5"></i> 
+                    <span class="label"  id="label5">System Configuration Maintenance</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-chart-pie icon"  id="icon" data-target="label6"></i> 
+                    <span class="label"  id="label6">System Graph and Reports</span>
+                </li>
+                <li> 
+                    <i class="fa-solid fa-chart-gantt icon"  id="icon" data-target="label7"></i> 
+                    <span class="label"  id="label7">System Activity Logs</span>    
+                </li>
+            </ul>
+            <ul class="users" id="ul-to-move">
+                <li> 
+                    <i class="fa-solid fa-gear icon" id="icon" data-target="label8" ></i>
+                    <span class="label"  id="label8">Account Settings</span> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-bell icon" id="icon" data-target="label9" ></i> 
+                    <span class="label"  id="label9">Notification</span> 
+                </li>
+                <li> 
+                    <img src="./style/assests/Profile-SA.png" class="icon" id="pfp"> 
+                    <div class="label account_setting" id="list">
+                        <ul class="account_setting_options">
+                            <!-- TODO: Put functionality here -->
+                            <li class="option">
+                            Login as Course Admin
+                                <i class="fa-solid fa-book-open-reader"></i>
+                            </li>
+                            <li class="option">
+                                Login as Learner
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </li>
+                            <li class="option">
+                                    Logout
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                            </li>
+                            <li><div class="divider"></div></li>
+                            <li class="option">
+                                View Profile
+                                <i class="fa-solid fa-user"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="Coming_Soon">
+            <img src="./style/assests/Working-amico.svg" alt="">
+            <h1>Elevating Learning, <br>Coming Soon!</h1>
+            <p>More function awaits as learning development starts!</p>
+        </div>
+    </main>
+</body>
+
+<script src="./global.js"></script>
+<script src="calendar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
